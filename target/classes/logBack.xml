@@ -1,0 +1,46 @@
+<configuration>
+	<!--<springProperty scope="context" name="LOG_PATH" source="log.path" />-->
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %n%msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>DiamLogs_File/nws_logs.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<fileNamePattern>DiamLogs_File/archive/nws_logs-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+			<maxFileSize>10KB</maxFileSize>
+			<totalSizeCap>3GB</totalSizeCap>
+			<maxHistory>60</maxHistory>
+			
+		</rollingPolicy>
+		<encoder>
+			<pattern>%date %level [%thread] %logger{10} [%file:%line] %n%msg%n </pattern>
+		</encoder>
+	</appender>
+
+
+	<!-- <appender name="FILE" class="ch.qos.logback.core.FileAppender"> 
+	
+	<file></file> 
+	
+	<encoder> 
+	
+	<pattern>%date %level [%thread] %logger{10} [%file:%line] %msg%n </pattern> 
+	
+	</encoder> 
+	
+	</appender> -->
+
+	<logger name="com.ooredoo" level="DEBUG" additivity="false">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="ROLLING" />
+	</logger>
+
+	<root level="DEBUG">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="ROLLING" />
+	</root>
+
+</configuration>

@@ -1,0 +1,94 @@
+2024-10-27 16:22:10,634 DEBUG [main] o.s.b.a.ApplicationAvailabilityBean [ApplicationAvailabilityBean.java:77] 
+Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2024-10-27 16:23:38,245 INFO [RMI TCP Connection(5)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [SpringApplicationAdminMXBeanRegistrar.java:159] 
+Application shutdown requested.
+2024-10-27 16:23:38,246 DEBUG [RMI TCP Connection(5)-127.0.0.1] o.s.b.a.ApplicationAvailabilityBean [ApplicationAvailabilityBean.java:77] 
+Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2024-10-27 16:23:38,247 DEBUG [RMI TCP Connection(5)-127.0.0.1] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:1049] 
+Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@53e211ee, started on Sun Oct 27 16:22:05 GST 2024
+2024-10-27 16:23:38,251 DEBUG [RMI TCP Connection(5)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:365] 
+Stopping beans in phase 2147483647
+2024-10-27 16:23:38,252 DEBUG [RMI TCP Connection(5)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:238] 
+Bean 'webServerGracefulShutdown' completed its stop procedure
+2024-10-27 16:23:38,253 DEBUG [RMI TCP Connection(5)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:365] 
+Stopping beans in phase 2147483646
+2024-10-27 16:23:38,351 INFO [RMI TCP Connection(5)-127.0.0.1] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] 
+Pausing ProtocolHandler ["http-nio-9999"]
+2024-10-27 16:23:38,352 INFO [RMI TCP Connection(5)-127.0.0.1] o.a.c.c.StandardService [DirectJDKLog.java:173] 
+Stopping service [Tomcat]
+2024-10-27 16:23:38,543 INFO [RMI TCP Connection(5)-127.0.0.1] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] 
+Stopping ProtocolHandler ["http-nio-9999"]
+2024-10-27 16:23:38,553 INFO [RMI TCP Connection(5)-127.0.0.1] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] 
+Destroying ProtocolHandler ["http-nio-9999"]
+2024-10-27 16:23:38,556 DEBUG [RMI TCP Connection(5)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:238] 
+Bean 'webServerStartStop' completed its stop procedure
+2024-10-27 16:23:38,556 DEBUG [RMI TCP Connection(5)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:365] 
+Stopping beans in phase -2147483647
+2024-10-27 16:23:38,557 DEBUG [RMI TCP Connection(5)-127.0.0.1] o.s.c.s.DefaultLifecycleProcessor [DefaultLifecycleProcessor.java:238] 
+Bean 'springBootLoggingLifecycle' completed its stop procedure
+2024-10-27 16:23:38,559 DEBUG [RMI TCP Connection(5)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:452] 
+Unregistering JMX-exposed beans on shutdown
+2024-10-27 16:23:38,560 DEBUG [RMI TCP Connection(5)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] 
+Shutting down ExecutorService 'applicationTaskExecutor'
+2024-10-27 16:24:27,970 INFO [main] c.n.a.NwsMiddlewareApplication [StartupInfoLogger.java:55] 
+Starting NwsMiddlewareApplication using Java 11.0.10 on DIAM-ITAMIDWARE with PID 170728 (D:\allConfigData\NwsMiddleware\target\classes started by PAMIDMGMT in D:\allConfigData\NwsMiddleware)
+2024-10-27 16:24:27,976 DEBUG [main] c.n.a.NwsMiddlewareApplication [StartupInfoLogger.java:56] 
+Running with Spring Boot v2.7.9, Spring v5.3.25
+2024-10-27 16:24:27,977 INFO [main] c.n.a.NwsMiddlewareApplication [SpringApplication.java:631] 
+No active profile set, falling back to 1 default profile: "default"
+2024-10-27 16:24:27,978 DEBUG [main] o.s.b.SpringApplication [SpringApplication.java:664] 
+Loading source class com.nws.api.NwsMiddlewareApplication
+2024-10-27 16:24:28,569 DEBUG [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:629] 
+Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@117e0fe5
+2024-10-27 16:24:28,615 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:225] 
+Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2024-10-27 16:24:28,643 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:225] 
+Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+2024-10-27 16:24:28,753 DEBUG [main] o.s.c.a.ClassPathBeanDefinitionScanner [ClassPathScanningCandidateComponentProvider.java:435] 
+Identified candidate component class: file [D:\allConfigData\NwsMiddleware\target\classes\com\nws\api\config\WebConfig.class]
+2024-10-27 16:24:28,795 DEBUG [main] o.s.c.a.ClassPathBeanDefinitionScanner [ClassPathScanningCandidateComponentProvider.java:435] 
+Identified candidate component class: file [D:\allConfigData\NwsMiddleware\target\classes\com\nws\api\controller\Controllers.class]
+2024-10-27 16:24:28,806 DEBUG [main] o.s.c.a.ClassPathBeanDefinitionScanner [ClassPathScanningCandidateComponentProvider.java:435] 
+Identified candidate component class: file [D:\allConfigData\NwsMiddleware\target\classes\com\nws\api\controller\DiamControllerVer1.class]
+2024-10-27 16:24:28,821 DEBUG [main] o.s.c.a.ClassPathBeanDefinitionScanner [ClassPathScanningCandidateComponentProvider.java:435] 
+Identified candidate component class: file [D:\allConfigData\NwsMiddleware\target\classes\com\nws\api\controller\DiamControllerVer2.class]
+2024-10-27 16:24:28,823 DEBUG [main] o.s.c.a.ClassPathBeanDefinitionScanner [ClassPathScanningCandidateComponentProvider.java:435] 
+Identified candidate component class: file [D:\allConfigData\NwsMiddleware\target\classes\com\nws\api\esb\ConnectionHelper.class]
+2024-10-27 16:24:28,827 DEBUG [main] o.s.c.a.ClassPathBeanDefinitionScanner [ClassPathScanningCandidateComponentProvider.java:435] 
+Identified candidate component class: file [D:\allConfigData\NwsMiddleware\target\classes\com\nws\api\exception\GlobalExceptionHandler.class]
+2024-10-27 16:24:28,836 DEBUG [main] o.s.c.a.ClassPathBeanDefinitionScanner [ClassPathScanningCandidateComponentProvider.java:435] 
+Identified candidate component class: file [D:\allConfigData\NwsMiddleware\target\classes\com\nws\api\interceptor\BaseInterceptor.class]
+2024-10-27 16:24:28,862 DEBUG [main] o.s.c.a.ClassPathBeanDefinitionScanner [ClassPathScanningCandidateComponentProvider.java:435] 
+Identified candidate component class: file [D:\allConfigData\NwsMiddleware\target\classes\com\nws\api\service\DiamServiceVer1.class]
+2024-10-27 16:24:28,866 DEBUG [main] o.s.c.a.ClassPathBeanDefinitionScanner [ClassPathScanningCandidateComponentProvider.java:435] 
+Identified candidate component class: file [D:\allConfigData\NwsMiddleware\target\classes\com\nws\api\service\DiamServiceVer2.class]
+2024-10-27 16:24:28,867 DEBUG [main] o.s.c.a.ClassPathBeanDefinitionScanner [ClassPathScanningCandidateComponentProvider.java:435] 
+Identified candidate component class: file [D:\allConfigData\NwsMiddleware\target\classes\com\nws\api\service\GetRecordCSHandlerVer1.class]
+2024-10-27 16:24:28,868 DEBUG [main] o.s.c.a.ClassPathBeanDefinitionScanner [ClassPathScanningCandidateComponentProvider.java:435] 
+Identified candidate component class: file [D:\allConfigData\NwsMiddleware\target\classes\com\nws\api\service\GetRecordCSHandlerVer2.class]
+2024-10-27 16:24:28,869 DEBUG [main] o.s.c.a.ClassPathBeanDefinitionScanner [ClassPathScanningCandidateComponentProvider.java:435] 
+Identified candidate component class: file [D:\allConfigData\NwsMiddleware\target\classes\com\nws\api\service\GetRecordGISCSHandlerVer1.class]
+2024-10-27 16:24:28,872 DEBUG [main] o.s.c.a.ClassPathBeanDefinitionScanner [ClassPathScanningCandidateComponentProvider.java:435] 
+Identified candidate component class: file [D:\allConfigData\NwsMiddleware\target\classes\com\nws\api\service\GetRecordGISCSHandlerVer2.class]
+2024-10-27 16:24:28,876 DEBUG [main] o.s.c.a.ClassPathBeanDefinitionScanner [ClassPathScanningCandidateComponentProvider.java:435] 
+Identified candidate component class: file [D:\allConfigData\NwsMiddleware\target\classes\com\nws\api\utils\DBUtils.class]
+2024-10-27 16:24:29,771 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:225] 
+Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+2024-10-27 16:24:29,781 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:225] 
+Creating shared instance of singleton bean 'org.springframework.boot.sql.init.dependency.DatabaseInitializationDependencyConfigurer$DependsOnDatabaseInitializationPostProcessor'
+2024-10-27 16:24:29,799 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:225] 
+Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2024-10-27 16:24:29,801 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:225] 
+Creating shared instance of singleton bean 'preserveErrorControllerTargetClassPostProcessor'
+2024-10-27 16:24:29,803 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:225] 
+Creating shared instance of singleton bean 'forceAutoProxyCreatorToUseClassProxying'
+2024-10-27 16:24:29,806 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:225] 
+Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2024-10-27 16:24:29,817 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:225] 
+Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2024-10-27 16:24:29,822 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:225] 
+Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2024-10-27 16:24:29,830 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:225] 
+Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+2024-10-27 16:24:29,838 DEBUG [main] o.s.b.f.s.DefaultListableBeanFactory [DefaultSingletonBeanRegistry.java:225] 
+Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinder'
